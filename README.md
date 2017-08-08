@@ -6,3 +6,14 @@
 * Introduction of angular routing
 * Implement Single page application concept in test project
 * How to build and deploy test app into server.
+
+# 9 August, 2017
+* Introduction of components
+* Data Binding
+* Introduction of *ngIf, *ngFor
+* Create Angulat tutorial project: Tour of Heroes
+
+# 17 August, 2017
+* Introduction of Services
+* Introduction of HTTP
+* Integrate Http with Tour of Heroes project

@@ -1,4 +1,5 @@
 Angular CLI Commands
+	
 	Q: How to install Angular-cli 
 	A: npm install -g angular-cli 
 	
@@ -21,10 +22,12 @@ Angular CLI Commands
 	A: ng serve --port 8090(your port)
 
 CLI Commands For New Project
+	
 	Q: How to create New Project using CLI 
 	A: ng new project-name
 
 CLI Commands For New Component
+	
 	Q: How to add new component using CLI with new folder 
 	A: ng generate component component-name
 		 or
@@ -51,6 +54,8 @@ CLI Commands For New Component
 		 ng g c component-name --spec false
 
 CLI Commands For New Directive
-	Q: How to create Directive Using CLIA: ng generate directive directive-name
+	
+	Q: How to create Directive Using CLI
+	A: ng generate directive directive-name
 		 or
 		 ng g d directive-name

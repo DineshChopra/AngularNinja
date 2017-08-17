@@ -21,3 +21,10 @@
 * Introduction of Services
 * Introduction of HTTP
 * Integrate Http with Tour of Heroes project
+
+# 19 August, 2017
+* Create New Project with Angular CLI
+* Create a SPA example
+* Deploy SPA example on firebase
+* Create tour of heroes example
+* Update project in github

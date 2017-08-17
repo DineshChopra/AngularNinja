@@ -5,10 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { HeroComponent } from './header/hero.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+
+import { HeroService } from './header/hero.service';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -19,11 +22,12 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
+    AboutusComponent,
     AppComponent,
+    ContactusComponent,
     HeaderComponent,
     HomeComponent,
-    ContactusComponent,
-    AboutusComponent
+    HeroComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,9 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [
+    HeroService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

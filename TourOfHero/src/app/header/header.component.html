@@ -7,11 +7,13 @@
   <router-outlet></router-outlet>
   {{hero}}
 <ul class="heroes">
-  <li *ngFor="let hero of heroes" 
-    (click)='onSelect(hero)'
+  <app-hero *ngFor="let hero of heroes" 
+    (click)='onSelect(hero)' 
+    [hero]="hero" 
+    [name]="'Anil'"
+    (clickEvent) = "onClickEvent($event)"
     [class.selected]="hero === selectedHero">
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
-  </li>
+  </app-hero>
 </ul>
 <h1 *ngIf="selectedHero">{{selectedHero.name}} - {{selectedHero.id}}</h1>
 <h1>{{selectedHero?.name}} - {{selectedHero?.id}}</h1>

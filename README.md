@@ -1,4 +1,8 @@
-# 2 August, 2017 (Gautam, Anil, Sunil, Manoj, Shrikant, kanhaiya)
+# Helpfull Things to All
+  https://ramanchopraangular2.blogspot.in/ 
+  Please look into cli-help.md file in this project
+  
+# 2 August, 2017 (Gautam, Anil, Sunil, Manoj, Shrikant)
 * Introduction of Angular CLI
 * Create a test project
 * Introduction of components
@@ -7,7 +11,7 @@
 * Implement Single page application concept in test project
 * How to build and deploy test app into server.
 
-# 9 August, 2017 (Gautam, Anil, Sunil, Raman)
+# 9 August, 2017 (Mr. Dinesh Chopra, Mr. Gautam, Mr. Anil, Mr. Sunil, Mr. Manoj, Mr. Shrikant, Mr. Raman)
 * Introduction of components
 * Data Binding
 * Introduction of *ngIf, *ngFor
@@ -17,7 +21,3 @@
 * Introduction of Services
 * Introduction of HTTP
 * Integrate Http with Tour of Heroes project
-
-# 17 August, 2017
-* Create a SPA example and deploy on firebase.
-* Cretae Tour of Heroes example with backend.

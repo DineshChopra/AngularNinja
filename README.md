@@ -4,7 +4,7 @@
 
 # Course Details [click here](https://github.com/DineshChopra/AngularNinja/blob/master/course-details.md)
 
-* /play dangerzone
+/play dangerzone
   
 # 2 August, 2017 (Gautam, Anil, Sunil, Manoj, Shrikant)
 * Introduction of Angular CLI

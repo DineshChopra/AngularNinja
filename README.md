@@ -1,6 +1,9 @@
 # Helpfull Things to All
   https://ramanchopraangular2.blogspot.in/ 
   Please look into cli-help.md file in this project
+
+# Course Details
+* https://github.com/DineshChopra/AngularNinja/blob/master/course-details.md
   
 # 2 August, 2017 (Gautam, Anil, Sunil, Manoj, Shrikant)
 * Introduction of Angular CLI
@@ -28,3 +31,4 @@
 * Deploy SPA example on firebase
 * Create tour of heroes example
 * Update project in github
+* Introduction of Progressive Web App PWA

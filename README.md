@@ -2,8 +2,7 @@
   https://ramanchopraangular2.blogspot.in/ 
   Please look into cli-help.md file in this project
 
-# Course Details
-* https://github.com/DineshChopra/AngularNinja/blob/master/course-details.md
+# Course Details [click here](https://github.com/DineshChopra/AngularNinja/blob/master/course-details.md)
   
 # 2 August, 2017 (Gautam, Anil, Sunil, Manoj, Shrikant)
 * Introduction of Angular CLI

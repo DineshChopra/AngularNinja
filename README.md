@@ -5,7 +5,7 @@
 # Course Details [click here](https://github.com/DineshChopra/AngularNinja/blob/master/course-details.md)
 
 And, of course emoji! :sparkles: :camel: :boom:
-:/play dangerzone:
+► /play crickets
   
 # 2 August, 2017 (Gautam, Anil, Sunil, Manoj, Shrikant)
 * Introduction of Angular CLI

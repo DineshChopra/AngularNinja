@@ -19,3 +19,4 @@
 * Introduction of Rest Services
 * Consume backend rest services and display data on frontend
 * Perform CURD operation
+* Build and Deployment

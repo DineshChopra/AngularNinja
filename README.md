@@ -28,10 +28,13 @@ And, of course emoji! :sparkles: :camel: :boom:
 * Introduction of HTTP
 * Integrate Http with Tour of Heroes project
 
-# 19 August, 2017
+# 19 August, 2017 (Anil, Gautam, Manoj)
 * Create New Project with Angular CLI
 * Create a SPA example
 * Deploy SPA example on firebase
 * Create tour of heroes example
 * Update project in github
 * Introduction of Progressive Web App PWA
+
+# 23 August, 2017
+* Perform CURD operation with backend

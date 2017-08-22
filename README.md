@@ -6,7 +6,7 @@
 
 And, of course emoji! :sparkles: :camel: :boom:
 
-* Add bootstrap into angular project 
+# Add bootstrap into angular project 
 ``` 
 npm install bootstrap
 ```
@@ -48,7 +48,7 @@ add bootstrap file into .angular-cli.json file
 * Introduction of Progressive Web App PWA
 
 # 23 August, 2017
-* Forms, 
+* Forms] (https://angular.io/guide/form-validation), 
 * Template Driven approach
 * Reactive approach
 

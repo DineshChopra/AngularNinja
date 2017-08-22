@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HeroTemplateFormComponent } from './forms/template-driven/hero-template-form.component';
+import { HeroTemplateFormComponent } from './forms/template-driven-form/hero-template-form.component';
 
 @NgModule({
   declarations: [

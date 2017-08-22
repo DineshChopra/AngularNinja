@@ -1,18 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HeroTemplateFormComponent } from './forms/template-driven-form/hero-template-form.component';
+import { HomeComponent } from './home/home.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+
+const appRoutes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: 'about-us',      component: AboutUsComponent },
+  { path: 'forms',      loadChildren: 'app/user-form/user-form.module#UserFormModule' }, // Lazy loading
+  { path: '', redirectTo: '/home', pathMatch: 'full'}
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroTemplateFormComponent
+    HomeComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

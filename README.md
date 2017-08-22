@@ -37,4 +37,9 @@ And, of course emoji! :sparkles: :camel: :boom:
 * Introduction of Progressive Web App PWA
 
 # 23 August, 2017
+* Forms, 
+* Template Driven approach
+* Reactive approach
+
+# 30 August
 * Perform CURD operation with backend

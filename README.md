@@ -6,8 +6,19 @@
 
 And, of course emoji! :sparkles: :camel: :boom:
 
-/play crickets
-  
+* Add bootstrap into angular project 
+``` 
+npm install bootstrap
+```
+add bootstrap file into .angular-cli.json file
+```javascript
+"styles": [
+  "styles.css",
+  "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+],
+```
+
+
 # 2 August, 2017 (Gautam, Anil, Sunil, Manoj, Shrikant)
 * Introduction of Angular CLI
 * Create a test project

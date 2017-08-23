@@ -42,15 +42,17 @@ add bootstrap file into .angular-cli.json file
 # 19 August, 2017 (Anil, Gautam, Manoj)
 * Create New Project with Angular CLI
 * Create a SPA example
-* Deploy SPA example on firebase
 * Create tour of heroes example
 * Update project in github
-* Introduction of Progressive Web App PWA
 
 # 23 August, 2017
-* Forms] (https://angular.io/guide/form-validation), 
+* [Forms] ('https://angular.io/guide/forms'), 
 * Template Driven approach
-* Reactive approach
 
 # 30 August
+* Reactive approach
+
+# Future topics
 * Perform CURD operation with backend
+* Deploy SPA example on firebase
+* Introduction of Progressive Web App PWA

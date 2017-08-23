@@ -45,8 +45,8 @@ add bootstrap file into .angular-cli.json file
 * Create tour of heroes example
 * Update project in github
 
-# 23 August, 2017
-* [Forms] ('https://angular.io/guide/forms'), 
+# 23 August, 2017 (Anil, Manoj, Shrikant, Kanhaiya, Sunil, Raman)
+* [Forms] (https://angular.io/guide/forms), 
 * Template Driven approach
 
 # 30 August

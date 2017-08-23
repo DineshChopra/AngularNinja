@@ -50,9 +50,10 @@ add bootstrap file into .angular-cli.json file
 * Template Driven approach
 
 # 30 August
-* Reactive approach
+* Send form data to Server via rest service
 
 # Future topics
+* Reactive approach
 * Perform CURD operation with backend
 * Deploy SPA example on firebase
 * Introduction of Progressive Web App PWA

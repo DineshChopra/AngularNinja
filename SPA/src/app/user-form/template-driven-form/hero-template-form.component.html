@@ -1,3 +1,5 @@
+<app-test-form></app-test-form>
+
 <div [hidden]="submitted">
   <div class="container">
     <h1>Hero Form</h1>
@@ -24,7 +26,8 @@
       </div>
       <div class="form-group">
         <label for="alterEgo">Alter Ego</label>
-        <input type="text" class="form-control" id="alterEgo" [(ngModel)]="model.alterEgo" name="alterEgo">
+        <input type="text" class="form-control" id="alterEgo" 
+        [(ngModel)]="model.alterEgo" name="alterEgo">
       </div>
 
       <div class="form-group">

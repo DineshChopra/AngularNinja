@@ -46,7 +46,7 @@ add bootstrap file into .angular-cli.json file
 * Update project in github
 
 # 23 August, 2017 (Anil, Manoj, Shrikant, Kanhaiya, Sunil, Raman)
-* [Forms] (https://angular.io/guide/forms), 
+* [ Forms ] (https://angular.io/guide/forms), 
 * Template Driven approach
 
 # 30 August

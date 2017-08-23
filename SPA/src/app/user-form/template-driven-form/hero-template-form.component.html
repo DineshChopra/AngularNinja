@@ -1,5 +1,3 @@
-<app-test-form></app-test-form>
-
 <div [hidden]="submitted">
   <div class="container">
     <h1>Hero Form</h1>
@@ -25,15 +23,15 @@
         </div>
       </div>
       <div class="form-group">
-        <label for="alterEgo">Alter Ego</label>
-        <input type="text" class="form-control" id="alterEgo" 
-        [(ngModel)]="model.alterEgo" name="alterEgo">
+        <label for="age">Age</label>
+        <input type="text" class="form-control" id="age" 
+        [(ngModel)]="model.age" name="age">
       </div>
 
       <div class="form-group">
-        <label for="power">Hero Power</label>
-        <select class="form-control" id="power" required [(ngModel)]="model.power" name="power">
-        <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+        <label for="hobby">Hero Hobby</label>
+        <select class="form-control" id="hobby" required [(ngModel)]="model.hobby" name="hobby">
+        <option *ngFor="let hobby of hobbies" [value]="hobby">{{hobby}}</option>
       </select>
       </div>
 
@@ -49,12 +47,12 @@
     <div class="col-xs-9  pull-left">{{ model.name }}</div>
   </div>
   <div class="row">
-    <div class="col-xs-3">Alter Ego</div>
-    <div class="col-xs-9 pull-left">{{ model.alterEgo }}</div>
+    <div class="col-xs-3">Age</div>
+    <div class="col-xs-9 pull-left">{{ model.age }}</div>
   </div>
   <div class="row">
-    <div class="col-xs-3">Power</div>
-    <div class="col-xs-9 pull-left">{{ model.power }}</div>
+    <div class="col-xs-3">Hobby</div>
+    <div class="col-xs-9 pull-left">{{ model.hobby }}</div>
   </div>
   <br>
   <button class="btn btn-primary" (click)="submitted=false">Edit</button>

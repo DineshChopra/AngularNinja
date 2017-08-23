@@ -11,10 +11,10 @@ export class HeroTemplateFormComponent implements OnInit {
   constructor() { }
   ngOnInit() { }
   
-  powers = ['Really Smart', 'Super Flexible',
-    'Super Hot', 'Weather Changer'];
+  hobbies = ['Cricket', 'Football',
+    'Hockey', 'BasketBall'];
 
-  model : Hero = new Hero(1, 'Mr. ', this.powers[0], 'Chuck Overstreet');
+  model : Hero = new Hero(1, 'Mr. ', 10, this.hobbies[0]);
 
   submitted = false;
 

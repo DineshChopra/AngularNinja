@@ -31,7 +31,7 @@ router.delete('/', function (req, res, next) {
     });
 });
 
-rouptr.put('/', function(req, res, next){
+router.put('/', function(req, res, next){
     let bank = req.body;
     let index = banks.findIndex(bank => bank.id == bankId);
     let existingBank = banks.find(element => {element.id == bank.id});
@@ -41,7 +41,7 @@ rouptr.put('/', function(req, res, next){
         data : banks
     });    
 });
-rouptr.patch('/', function(req, res, next){
+router.patch('/', function(req, res, next){
     let bank = req.body;
     let index = banks.findIndex(bank => bank.id == bankId);
     let existingBank = banks.find(element => {element.id == bank.id});

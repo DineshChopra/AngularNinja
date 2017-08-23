@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var heroRoutes = require('./routes/hero');
 var cardRoutes = require('./routes/card');
 var bankRoutes = require('./routes/bank');
 
@@ -34,10 +35,14 @@ app.use(function (req, res, next) {
         next();
 });
 
+app.use('/api/hero', heroRoutes);
 app.use('/api/card', cardRoutes);
 app.use('/api/bank', bankRoutes);
 
-
+console.log('public api list is given below');
+console.log('localhost:3010/api/hero');
+console.log('localhost:3010/api/card');
+console.log('localhost:3010/api/bank');
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   res.render('index');

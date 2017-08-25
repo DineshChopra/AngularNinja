@@ -1,0 +1,12 @@
+<p>Reactive form examle</p>
+<app-hero-list 
+  *ngIf="!selectedHero"
+  [heroList] = "heroList"
+  (heroAddEditEvent) = "initHero($event)"
+  (deleteHeroEvent) = "onDeleteHeroEvent($event)"></app-hero-list>
+<app-hero-reactive-form
+  *ngIf="selectedHero"
+  [hero] = "selectedHero"
+  (saveHeroEvent) = "onSaveHero($event)"
+  (cancelHeroEvent) = "onCancelHeroEvent()"
+></app-hero-reactive-form>

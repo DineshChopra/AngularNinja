@@ -9,14 +9,16 @@ import { HeroTemplateFormComponent } from './template-driven-form/hero-template-
 import { HeroFormService } from './hero-form.service';
 import { HeroReactiveFormComponent } from './reactive-form/hero-reactive-form.component';
 import { HeroFormComponent } from './hero-form.component';
+import { HeroListComponent } from './hero-list/hero-list.component';
+import { ReactiveComponent } from './reactive-form/reactive.component';
 
 const userFormRoutes: Routes = [
   { path: '', component: HeroFormComponent,
     children : [
-      { path: '', redirectTo: 'reactive', pathMatch: 'full' },
+      { path: '', redirectTo: 'hero', pathMatch: 'full' },
       { path: 'template', component: HeroTemplateFormComponent },
-      { path: 'reactive', component: HeroReactiveFormComponent },
-      { path: 'dynamic', component: HeroTemplateFormComponent }
+      { path: 'reactive', component: ReactiveComponent },
+      { path: 'dynamic', component: HeroTemplateFormComponent },
     ]
   }
 ];
@@ -33,6 +35,8 @@ const userFormRoutes: Routes = [
     HeroFormComponent,
     HeroTemplateFormComponent,
     HeroReactiveFormComponent,
+    HeroListComponent,
+    ReactiveComponent,
   ],
   exports: [
     RouterModule

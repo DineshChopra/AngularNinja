@@ -1,22 +1,18 @@
 <h2>Hero Detail</h2>
 <h3><i>Just a FormControl</i></h3>
-<form [formGroup]="heroForm" novalidate>
+<form [formGroup]="heroForm" novalidate (ngSubmit)="onSubmit()">
   <label class="center-block">Name:
     <input class="form-control" formControlName="name">
+  </label>
+  <label class="center-block">Age:
+    <input class="form-control" formControlName="age">
   </label>
   <select class="form-control" formControlName="hobby">
     <option value="">Select Hobby</option>
     <option *ngFor="let hobby of hobbies" [value]="hobby">{{hobby}}</option>
   </select>
-  <div formGroupName="address">
-    <label class="center-block">City:
-        <input class="form-control" formControlName="city">
-    </label>
-    <label class="center-block">State:
-          <input class="form-control" formControlName="state">
-    </label>
-  </div>
-  <button type="submit" (click)="onSubmit()">Submit</button>
+  <button type="submit">{{buttonActionText}}</button>
+  <button type="button" (click)="onCancel()">Cancel</button>
 </form>
 <p>Form value: {{ heroForm.value | json }}</p>
 <p>Form status: {{ heroForm.status | json }}</p>

@@ -26,7 +26,7 @@ export class HeroTemplateFormComponent implements OnInit {
   
   hobbies = hobbies;
 
-  model : Hero = new Hero(1, 'Mr. ', 10, this.hobbies[0]);
+  model : Hero = new Hero();
 
   submitted = false;
 

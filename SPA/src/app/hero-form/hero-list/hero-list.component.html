@@ -1,0 +1,30 @@
+<div *ngIf="!selectedHero">
+  <nav>
+    <p (click)="gotoAddEditHero()">Add Hero</p>
+  </nav>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Hobby</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let hero of heroList">
+        <td>{{hero.id}}</td>
+        <td>{{hero.name}}</td>
+        <td>{{hero.age}}</td>
+        <td>{{hero.hobby}}</td>
+        <td (click)="gotoAddEditHero(hero)">Edit</td>
+        <td (click)="gotoDeleteHero(hero.id)">Delete</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<app-hero-reactive-form
+  *ngIf="selectedHero"
+  [hero] = "selectedHero"></app-hero-reactive-form>

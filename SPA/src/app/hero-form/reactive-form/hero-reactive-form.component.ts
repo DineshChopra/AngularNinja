@@ -1,40 +1,55 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges, Input, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
+import { Router } from '@angular/router';
 import { hobbies, Hero } from '../model/hero';
 import { Address } from '../model/address';
+import { HeroFormService } from '../hero-form.service';
 @Component({
   selector: 'app-hero-reactive-form',
-  templateUrl: './hero-reactive-form.component.html',
-  styleUrls: ['./hero-reactive-form.component.css']
+  templateUrl: './hero-reactive-form.component.html'
 })
-export class HeroReactiveFormComponent implements OnInit {
+export class HeroReactiveFormComponent implements OnInit, OnChanges {
 
   heroForm: FormGroup;
   hobbies;
-  hero : Hero;
-  constructor(private fb: FormBuilder) { 
-    this.hero = new Hero(1,'Ram', 10, 'Cricket');
-    this.hero.addresses = new Address();
+  @Input() hero : Hero;
+  @Output() saveHeroEvent = new EventEmitter<Hero>();
+  @Output() cancelHeroEvent = new EventEmitter();
+  buttonActionText : string;
+  constructor(private fb: FormBuilder,
+    private router: Router) {
     this.createForm();
   }
-
+  
   ngOnInit() {
   }
-  createForm(){
+  ngOnChanges(){
+    this.setFormValues();
+    this.buttonActionText = this.hero.id ? 'Edit' : 'Save';
+  }
+  private createForm(){
     this.heroForm = this.fb.group({
-      name : [this.hero.name, Validators.required],
-      hobby : [this.hero.hobby, Validators.required],
-      address : this.fb.group({
-        city : '',
-        state : ''
-      })
+      name : ['', Validators.required],
+      age : [''],
+      hobby : ['', Validators.required]
     });
     this.hobbies = hobbies;
   }
-  onSubmit(){
-    this.hero = this.heroForm.value;
-    console.log(this.hero);
+  private setFormValues(){
+    if(this.hero && this.heroForm){
+      this.heroForm.setValue({
+        name : this.hero.name || '',
+        age : this.hero.age || '',
+        hobby : this.hero.hobby || ''
+      })
+    }
   }
-
+  onSubmit(){
+    let hero : Hero = this.heroForm.value;
+    hero.id = this.hero.id;
+    this.saveHeroEvent.emit(hero);
+  }
+  onCancel(){
+    this.cancelHeroEvent.emit();
+  }
 }

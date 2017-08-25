@@ -9,9 +9,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'about-us',      component: AboutUsComponent },
-  { path: 'forms',      loadChildren: 'app/user-form/user-form.module#UserFormModule' }, // Lazy loading
-  { path: '', redirectTo: '/home', pathMatch: 'full'}
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'forms', loadChildren: 'app/hero-form/hero-form.module#HeroFormModule' }, // Lazy loading
+  { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 @NgModule({

@@ -1,8 +1,16 @@
 <div class="container">
-  <nav>
-    <a routerLink="/home" routerLinkActive="active">Home</a>
-    <a routerLink="/about-us" routerLinkActive="active">About Us</a>
-    <a routerLink="/forms" routerLinkActive="active">Forms</a>
+  <nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+      <li>
+        <a routerLink="/home" routerLinkActive="active">Home</a>
+      </li>
+      <li>
+        <a routerLink="/about-us" routerLinkActive="active">About Us</a>
+      </li>
+      <li>
+        <a routerLink="/forms" routerLinkActive="active">Forms</a>
+      </li>
+    </ul>
   </nav>
   <router-outlet></router-outlet>
 </div>

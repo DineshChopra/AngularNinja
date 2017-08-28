@@ -11,6 +11,11 @@ import { HeroReactiveFormComponent } from './reactive-form/hero-reactive-form.co
 import { HeroFormComponent } from './hero-form.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { ReactiveComponent } from './reactive-form/reactive.component';
+import { HeroDynamicFormComponent } from './dynamic-form/dynamic-form.component';
+import { DynamicComponent } from './dynamic-form/dynamic.component';
+import { DynamicFormQuestionComponent } from './dynamic-form/dynamic-form-question.component';
+import { QuestionService } from './dynamic-form/question.service';
+import { QuestionControlService } from './dynamic-form/question-control.service';
 
 const userFormRoutes: Routes = [
   { path: '', component: HeroFormComponent,
@@ -18,7 +23,7 @@ const userFormRoutes: Routes = [
       { path: '', redirectTo: 'hero', pathMatch: 'full' },
       { path: 'template', component: HeroTemplateFormComponent },
       { path: 'reactive', component: ReactiveComponent },
-      { path: 'dynamic', component: HeroTemplateFormComponent },
+      { path: 'dynamic', component: DynamicComponent },
     ]
   }
 ];
@@ -32,17 +37,22 @@ const userFormRoutes: Routes = [
     RouterModule.forChild(userFormRoutes)
   ],
   declarations: [
+    DynamicComponent,
+    DynamicFormQuestionComponent,
     HeroFormComponent,
     HeroTemplateFormComponent,
     HeroReactiveFormComponent,
     HeroListComponent,
     ReactiveComponent,
+    HeroDynamicFormComponent,
   ],
   exports: [
     RouterModule
   ],
   providers : [
-    HeroFormService
+    HeroFormService,
+    QuestionService,
+    QuestionControlService
   ],
   bootstrap : [HeroFormComponent]
 })

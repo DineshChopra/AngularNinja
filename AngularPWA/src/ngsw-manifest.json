@@ -1,0 +1,20 @@
+{
+    "dynamic" : {
+        "group" : [
+            {
+                "name" : "",
+                "urls" : {
+                    "" : {
+                        "match" : ""
+                    }
+                },
+                "cache" : {
+                    "optimizeFor" : "performance",
+                    "maxAgeMs" : 3600000,
+                    "maxEntries" : null ,
+                    "strategy" : ""
+                }
+            }
+        ]
+    }
+}

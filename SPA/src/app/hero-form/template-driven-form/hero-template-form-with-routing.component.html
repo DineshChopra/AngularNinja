@@ -1,0 +1,42 @@
+<p>Hero templte form</p>
+
+<div class="container">
+    <h1>Hero Form</h1>
+    {{diagnostic}}
+    <form #heroForm="ngForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" 
+        required minlength="4" forbiddenName="bob" 
+        [(ngModel)]="model.name" name="name" #name="ngModel">        TODO: remove this: {{model.name}}
+      </div>
+      <!-- Name validation      -->
+      <div *ngIf="name.invalid && (name.dirty || name.touched)"
+      class="alert alert-danger">
+        <div *ngIf="name.errors.required">
+          Name is required.
+        </div>
+        <div *ngIf="name.errors.minlength">
+          Name must be at least 4 characters long.
+        </div>
+        <div *ngIf="name.errors.forbiddenName">
+          Name cannot be Bob.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="text" class="form-control" id="age" 
+        [(ngModel)]="model.age" name="age">
+      </div>
+
+      <div class="form-group">
+        <label for="hobby">Hero Hobby</label>
+        <select class="form-control" id="hobby" required [(ngModel)]="model.hobby" name="hobby">
+        <option *ngFor="let hobby of hobbies" [value]="hobby">{{hobby}}</option>
+      </select>
+      </div>
+
+      <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
+
+    </form>
+  </div>

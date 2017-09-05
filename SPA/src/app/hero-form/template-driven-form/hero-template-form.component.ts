@@ -10,9 +10,12 @@ import { hobbies } from '../model/hero';
 })
 export class HeroTemplateFormComponent implements OnInit {
 
-  constructor(private heroFormService : HeroFormService) { }
+  constructor(private heroFormService : HeroFormService) {
+
+   }
   ngOnInit() {
     this.getHeroes();
+    this.model.name = 'Ram';
   }
   getHeroes(){
     this.heroFormService.getHeroes()
@@ -27,6 +30,7 @@ export class HeroTemplateFormComponent implements OnInit {
   hobbies = hobbies;
 
   model : Hero = new Hero();
+  
 
   submitted = false;
 

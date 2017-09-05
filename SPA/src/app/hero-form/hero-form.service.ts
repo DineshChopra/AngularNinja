@@ -27,4 +27,10 @@ export class HeroFormService {
     const url = this.heroUrl + "/" + heroId
     return this.http.delete(url, this.options)
   }
+
+  getHero(heroId) : Observable<any>{
+    console.log('heroid ::::::::::::: ', heroId);
+    const url = this.heroUrl + "/" + heroId;
+    return this.http.get(url);
+  }
 }

@@ -13,6 +13,19 @@ router.get('/', function (req, res, next) {
         data : heroes
     });
 });
+router.get('/:id', function (req, res, next) {
+    let heroId = req.params.id;
+    let hero;
+    if(heroId == 0){
+        hero = {name : '', hobby : ''};
+    }else{
+        hero = heroes.find(e => e.id == heroId);
+    }
+    res.status(200).json({
+        message : 'Success',
+        data : hero
+    });
+});
 
 router.post('/', function (req, res, next) {
     let hero = req.body;

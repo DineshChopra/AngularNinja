@@ -49,8 +49,15 @@ add bootstrap file into .angular-cli.json file
 * [ Forms ] (https://angular.io/guide/forms), 
 * Template Driven approach
 
-# 30 August
+# 30 August (Sunil, Raman, Anil, Shrikant, Gautam, Kanhaiya)
 * Send form data to Server via rest service
+
+# 2nd Sept (Sunil, Raman, Manoj, Shrikant, Anil)
+* Modular Approach
+* Lazy loading
+
+# 6 Sept
+* Perform CURD operation
 
 # Future topics
 * Reactive approach

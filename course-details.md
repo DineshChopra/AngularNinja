@@ -34,7 +34,7 @@ ng new angular-app --prefix=bs --style=sass
 * Add external libraries, i.e. Bootstrap, jQuery etc.
 Add bootstrap file into .angular-cli.json file
 ```javascript
-npm install bootstrap
+npm install bootstrap --save
 
 "styles": [
   "styles.css",
@@ -58,12 +58,41 @@ Structural directives are responsible for HTML layout. They shape or reshape the
 ```
 <div *ngIf="true">Content exist and displays</div>
 <div *ngIf="false">Content does not exist in DOM</div>
+
+var show = true; // false
+<div *ngIf="show; else elseBlock">Text to show</div>
+<ng-template #elseBlock>Alternate text while primary text is hidden</ng-template>
 ```
 For hiding element
 ```
 <p [style.display]="'none'">Content still exist in DOM</p>
 ```
-* Interaction between two component Input(), Output()
+
+`ngFor` It is used to repeat any array
+```
+var names = ['Misko', 'Brad Green', 'Ram', 'Sham']
+<div *ngFor="let name of names">{{name}}</div>
+```
+`ngSwitch` 
+```
+    var tab = 1;
+    <div [ngSwitch]="tab">
+      <h1 *ngSwitchCase="1">First Heading</h1>
+      <h1 *ngSwitchCase="2">Second Heading</h1>
+      <h1 *ngSwitchCase="3">Third Heading</h1>
+    </div>
+```
+* Interaction between two component `Input(), Output()`
+```
+    <app-hero-list
+        [heroList]="heroList"
+        (clickEvent)="onClickEvent($event)"></app-hero-list>
+
+    heroList = ['Misko', 'Brad Green', 'Ram', 'Sham'];
+    onClickEvent(event){
+        console.log('click event is called ', event);
+    }
+```
 
 ## Day: 2
 * Services
@@ -85,3 +114,5 @@ For hiding element
 * Component, Service, Mocking
 
 * Build and Deployment
+* JIT (Just in time compilation)
+* AOT (Ahead of time compilation)

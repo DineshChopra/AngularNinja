@@ -18,7 +18,6 @@ export class HeroListComponent implements OnInit {
   ngOnInit() {
   }
   gotoAddEditHero(hero? : Hero){
-    console.log('Add Edit hero is clicked', hero);
     this.heroAddEditEvent.emit(hero);
   }
   gotoDeleteHero(heroId){

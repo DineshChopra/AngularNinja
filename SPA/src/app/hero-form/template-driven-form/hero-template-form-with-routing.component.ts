@@ -22,8 +22,7 @@ export class HeroTemplateFormWithRoutingComponent implements OnInit {
   ngOnInit() {
     this.route.paramMap
       .switchMap((params: ParamMap) =>
-        this.service.getHero(params.get('id'))
-      )
+        this.service.getHero(params.get('id')))
       .subscribe((response: any) => {
         this.model = response.json().data;
       });
@@ -32,7 +31,7 @@ export class HeroTemplateFormWithRoutingComponent implements OnInit {
     this.service.saveHero(this.model)
       .subscribe(
       (response: any) => {
-        this.router.navigate(['forms/herotemplateWithRouting']);
+        this.router.navigate(['forms/hero-template-with-routing']);
       }
       )
   }

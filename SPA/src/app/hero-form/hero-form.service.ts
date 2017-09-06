@@ -18,7 +18,6 @@ export class HeroFormService {
   }
   
   saveHero(hero : Hero) : Observable<any>{
-    
     const headers = new Headers({ 'Content-Type': 'application/json' });
     const body = JSON.stringify(hero);
     return this.http.post(this.heroUrl, body, {headers : headers})

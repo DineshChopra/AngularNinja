@@ -59,3 +59,8 @@ CLI Commands For New Directive
 	A: ng generate directive directive-name
 	   or
 	   ng g d directive-name
+	Q: How to change prefix
+	A: --prefix=bs 
+	
+	Q: How to change default style i.e. less, sass, css
+	A: --style=sass

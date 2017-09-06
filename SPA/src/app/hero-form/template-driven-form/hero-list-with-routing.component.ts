@@ -22,6 +22,11 @@ export class HeroListWithRoutingComponent implements OnInit {
     this.service.getHeroes().subscribe(
       (response : any) => {
         this.heroList = response.json().data;
+      },
+      (error : any) => {
+
+      },
+      () => {
       }
     );
   }
@@ -40,7 +45,6 @@ export class HeroListWithRoutingComponent implements OnInit {
     this.service.deleteHero(heroId).subscribe(
       (response : any) => {
         this.heroList = response.json().data;
-        console.log('Hero deleted successfully ---------- ', this.heroList);
       }
     )
   }

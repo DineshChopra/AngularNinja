@@ -56,7 +56,7 @@ add bootstrap file into .angular-cli.json file
 * Modular Approach
 * Lazy loading
 
-# 6 Sept
+# 6 Sept (Sunil, Raman, Manoj, Shrikant, Anil, Kanhaiya)
 * Perform CURD operation
 
 # Future topics

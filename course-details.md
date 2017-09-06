@@ -21,6 +21,9 @@
 * Perform CURD operation
 * Build and Deployment
 --------------------------
+## prerequisites
+* node.js
+* Basic understanding of html5, css3, javascript
 ## Day: 1
 * Introduction of angular-cli. For details  [Click Here](https://github.com/DineshChopra/AngularNinja/blob/master/cli-help.md)
 * Create basic project structure with angular-cli
@@ -38,7 +41,7 @@ npm install bootstrap
   "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 ],
 ```
-* Introduction of component
+* `Introduction of component`
 Components are the most basic building block of an UI in an Angular application. An Angular application is a tree of Angular components. Angular components are a subset of directives. Unlike directives, components always have a template and only one component can be instantiated per an element in a template.
 ```
 ng g c <component-name>
@@ -47,10 +50,11 @@ ng g c <component-name>
 -- is       Creates inline styles
 --spec false    Will not generate spec file
 ```
-* Structural Directive ngIf, ngFor, ngSwitch
+* Structural Directive `ngIf, ngFor, ngSwitch`
+
 Structural directives are responsible for HTML layout. They shape or reshape the DOM's structure, typically by adding, removing, or manipulating elements.
 
-NgIf is the simplest structural directive and the easiest to understand. It takes a boolean expression and makes an entire chunk of the DOM appear or disappear.
+`NgIf` is the simplest structural directive and the easiest to understand. It takes a boolean expression and makes an entire chunk of the DOM appear or disappear.
 ```
 <div *ngIf="true">Content exist and displays</div>
 <div *ngIf="false">Content does not exist in DOM</div>
@@ -61,23 +65,23 @@ For hiding element
 ```
 * Interaction between two component Input(), Output()
 
-Day: 2
-Services
-Dependency Injection
-Interaction between two components by using Service
-Interacting with server by using http
-Perform CRUD (Create, Read, Update, Delete) operation with rest api
-Introduction of Observables.
+## Day: 2
+* Services
+* Dependency Injection
+* Interaction between two components by using Service
+* Interacting with server by using http
+* Perform CRUD (Create, Read, Update, Delete) operation with rest api
+* Introduction of Observables.
 
-Day: 3
-Introduction of Single Page Application SPA
-Router
-Lazy loading
-What is Modular approach, and how to implement it.
-Create basic project structure for big application.
+## Day: 3
+* Introduction of Single Page Application SPA
+* Router
+* Lazy loading
+* What is Modular approach, and how to implement it.
+* Create basic project structure for big application.
 
-Day: 4
-Unit Testing
-Component, Service, Mocking
+## Day: 4
+* Unit Testing
+* Component, Service, Mocking
 
-Build and Deployment
+* Build and Deployment

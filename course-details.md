@@ -1,13 +1,11 @@
 # Course Details
 ## Day 1
-* Create angular cli project
-`ng new spa`
-* Introduction of Component
-* Create component with angular-cli
-`ng g c <component-name>`
-* Create multiple component
-* Introduction of Single page application
-* Cretae single page application by using angular routing.
+* Introduction of angular-cli. For details  [Click Here](https://github.com/DineshChopra/AngularNinja/blob/master/cli-help.md)
+* Create basic project structure with angular-cli
+* How to add external libraries, i.e. Bootstrap, jQuery etc.
+* Introduction of component
+* Structural Directive
+* Interaction between two component `Input(), Output()`
 
 ## Day 2
 * Introduction of Data Binding
@@ -31,7 +29,8 @@
 ng new angular-app
 ng new angular-app --prefix=bs --style=sass
 ```
-* Add external libraries, i.e. Bootstrap, jQuery etc.
+* How to add external libraries, i.e. Bootstrap, jQuery etc.
+
 Add bootstrap file into .angular-cli.json file
 ```javascript
 npm install bootstrap --save

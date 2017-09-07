@@ -4,9 +4,10 @@
 * Create basic project structure with angular-cli
 * How to add external libraries, i.e. Bootstrap, jQuery etc.
 * Introduction of component
-* Structural Directive
+* Data Binding
+* Structural Directive `ngIf, ngFor, ngSwitch`
 * Interaction between two component `Input(), Output()`
-
+ 
 ## Day 2
 * Introduction of Data Binding
 * Introduction of inbuilt directive
@@ -94,6 +95,10 @@ var names = ['Misko', 'Brad Green', 'Ram', 'Sham']
 ```
 
 ## Day: 2
+* Forms 
+    * Template Driven
+    * Reactive Form
+    * Validation
 * Services
 * Dependency Injection
 * Interaction between two components by using Service

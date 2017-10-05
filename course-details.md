@@ -7,6 +7,7 @@
 * Data Binding
 * Structural Directive `ngIf, ngFor, ngSwitch`
 * Interaction between two component `Input(), Output()`
+* Pipe
  
 ## Day 2
 * Introduction of Data Binding
@@ -112,6 +113,8 @@ var names = ['Misko', 'Brad Green', 'Ram', 'Sham']
 * Lazy loading
 * What is Modular approach, and how to implement it.
 * Create basic project structure for big application.
+
+## Create a sample working project
 
 ## Day: 4
 * Unit Testing

@@ -59,6 +59,8 @@ add bootstrap file into .angular-cli.json file
 # 6 Sept (Sunil, Raman, Manoj, Shrikant, Anil, Kanhaiya)
 * Perform CURD operation
 
+# 14, 15, 16 Sept  [Newgen] (./Newgen Angular Course Content.pdf)
+  * Corporate Traning
 # Future topics
 * Reactive approach
 * Perform CURD operation with backend

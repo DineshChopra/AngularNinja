@@ -1,0 +1,15 @@
+<table class="table table-bordered">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Hobby</th>
+  </tr>
+  <tr app-hero-detail *ngFor="let hero of heroes; trackBy: trackHero"
+  [hero] = "hero"
+  ></tr>
+</table>
+<button (click)="addHero()">Add Hero</button>
+<input [(ngModel)]="hero.name" placeholder="Name" />
+<input [(ngModel)]="hero.age" placeholder="Age"/>
+<input [(ngModel)]="hero.hobby" placeholder="Hobby"/>

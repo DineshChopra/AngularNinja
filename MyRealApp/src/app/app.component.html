@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+      <nav class="nav nav-masthead">
+          <a class="nav-link active" href="javascript:void(0)" (click)="changeLang('en')">English</a>
+          <a class="nav-link" href="javascript:void(0)" (click)="changeLang('fr')">French</a>
+          <a class="nav-link" href="javascript:void(0)" (click)="changeLang('ch')">Urdu</a>
+        </nav>
+      <h1 i18n>{{ 'message'  }}</h1>
+      <h1 i18n="An introduction header for this sample">Hello i18n!</h1>
+  </div>
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+</div>

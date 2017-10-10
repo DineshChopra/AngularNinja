@@ -1,0 +1,9 @@
+<p>
+  change-detection POC
+</p>
+<button type="input" (click)="updateHeroProperty()">Update Hero Property</button>
+<button type="input" (click)="updateHeroReference()">Update Hero Reference</button>
+<hr>
+<app-child-one [hero]="hero"></app-child-one>
+<hr>
+<app-child-two [hero]="hero"></app-child-two>

@@ -45,3 +45,14 @@ minimize use of parser blocking resources (JS)
 	Defer javascript execution
 	use async/defer attribute on script tab i.e. <script ..... async></script>
 	use 
+
+## Censhare
+	Create sudoku app
+
+## Sapient
+	Create a calculator app
+	Critical rendering path
+	border box and content box
+	performance optimizations
+## Thoughtworks
+	Create a app for Battleship (link)

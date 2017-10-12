@@ -7,6 +7,7 @@ import { Hero } from '../../hero/hero';
       child-one component has default change detection strategy. So change detection executes everytime when model value is changed
     </p>
     <h3>{{hero.name}}</h3>
+    <input [(ngModel)]="hero.name">
   `,
   styles: []
 })

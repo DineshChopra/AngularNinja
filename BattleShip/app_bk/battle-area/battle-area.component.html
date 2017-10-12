@@ -1,0 +1,23 @@
+<table class="table table-bordered">
+  <tr>
+    <td></td>
+    <td *ngFor="let columnValue of battleArea.width | numberToArray">{{columnValue}}</td>
+  </tr>
+  <tr *ngFor="let row of battleArea.height | numberToArray, let i=index">
+    <td>{{battleArea.verticalCellValues[i]}}</td>
+    <td *ngFor="let column of battleArea.width | numberToArray" 
+      [ngClass]="isShipExist(row, column)">{{getShipType(row, column)?.shipType}}</td>
+  </tr>
+</table>
+<!-- Player information -->
+<div class="row" *ngIf="!battleArea.result">
+  <button (click)="launchMissile()" 
+  type="button" class="btn"
+  [ngClass] = "getActionClass()"
+  >Launch Missile</button>
+  <div class="col-1 missile" 
+  *ngFor="let missile of battleArea.getPlayer().missileList">
+    {{missile}}
+  </div>
+</div>
+

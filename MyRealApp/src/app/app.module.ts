@@ -12,8 +12,6 @@ import { HeroService } from './hero/service/hero.service';
 import { heroListReducer } from './hero/store/hero.reducers';
 
 // i18n internationalization
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
 import { ChildOneComponent } from './change-detection/child-one/child-one.component';
 import { ChildTwoComponent } from './change-detection/child-two/child-two.component';
@@ -26,10 +24,6 @@ const appRoutes : Routes = [
   {path : "changeDetection", component : ChangeDetectionComponent},
 ]
 
-// AoT requires an exported function for factories
-export function HttpLoaderFactory(httpClient: HttpClient) {
-  return new TranslateHttpLoader(httpClient, '/assets/i18n/', '.json');
-}
 
 @NgModule({
   declarations: [
@@ -48,13 +42,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     }),
     // RouterModule.forRoot(appRoutes)
     RouterModule.forRoot(appRoutes, {preloadingStrategy : PreloadAllModules}),
-    TranslateModule.forRoot({
-      loader: {
-          provide: TranslateLoader,
-          useFactory: HttpLoaderFactory,
-          deps: [Http]
-        }
-      })
   ],
   providers : [ HeroService ],
   bootstrap: [AppComponent]

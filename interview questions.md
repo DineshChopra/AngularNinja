@@ -51,8 +51,12 @@ minimize use of parser blocking resources (JS)
 
 ## Sapient
 	Create a calculator app
+	https://weblogs.asp.net/dwahlin/techniques-strategies-and-patterns-for-structuring-javascript-code 
+
 	Critical rendering path
 	border box and content box
 	performance optimizations
 ## Thoughtworks
 	Create a app for Battleship (link)
+
+## http://redmonk.com/

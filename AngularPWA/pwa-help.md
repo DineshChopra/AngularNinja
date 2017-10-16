@@ -7,6 +7,10 @@ Google Chrome developers channel
 https://www.youtube.com/playlist?list=PLNYkxOF6rcIAdnzEsWkg0KpMn2WJwMBmN
 https://classroom.udacity.com/courses/ud811
 
+Web push codelab
+https://codelabs.developers.google.com/codelabs/push-notifications/index.html?index=..%2F..%2Findex#0
+https://glitch.com/edit/#!/web-push-codelab?path=app.js:15:21
+
 
 ## Goal of PWA...
 * Reliable - Fast Loading, work offline and on flanky networks
@@ -109,3 +113,9 @@ Firebase deploy
 		select application
 		It takes some time, let's wait and be it complete 
 	firebase deploy
+
+Enable developer mode
+phone ->settings ->  about phone -> build number (click 7 times )
+Settings -> Developer options -> usb debugging (ON)
+
+chrome://inspect/#devices

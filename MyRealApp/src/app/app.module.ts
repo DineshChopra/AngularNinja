@@ -22,6 +22,7 @@ const appRoutes : Routes = [
   {path : "hero", loadChildren : 'app/hero/hero.module#HeroModule'},
   {path : "aboutus", loadChildren : 'app/aboutus/aboutus.module#AboutusModule'},
   {path : "changeDetection", component : ChangeDetectionComponent},
+  {path : "cricket", loadChildren : 'app/cricket/cricket.module#CricketModule'},
 ]
 
 

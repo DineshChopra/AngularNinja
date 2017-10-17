@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var heroRoutes = require('./routes/hero');
 var cardRoutes = require('./routes/card');
 var bankRoutes = require('./routes/bank');
+var cricketRoutes = require('./routes/cricket');
 
 var app = express();
 
@@ -38,6 +39,7 @@ app.use(function (req, res, next) {
 app.use('/api/hero', heroRoutes);
 app.use('/api/card', cardRoutes);
 app.use('/api/bank', bankRoutes);
+app.use('/api/cricket', cricketRoutes);
 
 console.log('public api list is given below');
 console.log('localhost:3010/api/hero');

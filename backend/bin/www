@@ -22,6 +22,32 @@ app.set('port', port);
 var server = http.createServer(app);
 
 /**
+ * Create socket.io connection
+ */
+var totalScore = 0;
+var scores = [];
+var io = require('socket.io')(server);
+io.on('connection', function(client) {  
+  console.log('Client connected...');
+
+  client.on('join', function(data) {
+      console.log(data);
+      // client.emit('messages', 'Message reccieved from server ---------');
+      client.broadcast.emit('broad', 'Broadcasting messages -----------');
+  });
+
+
+  client.on('update-score', function(data){
+    console.log('update-score event is fired ', data);
+    scores.push(data);
+    totalScore += data;
+    client.emit('total-score-broadcast', {totalScore, 'scores' : scores});
+    client.broadcast.emit('total-score-broadcast', {totalScore, 'scores' : scores});
+  })
+
+});
+
+/**
  * Listen on provided port, on all network interfaces.
  */
 

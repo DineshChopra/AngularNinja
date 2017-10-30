@@ -15,5 +15,16 @@
     <li>
       <a routerLink="/cricket" routerLinkActive="active">Cricket Websocket</a>
     </li>
+    <ng-template [ngIf]="!authService.isAuthenticated()">
+      <li>
+        <a routerLink="/signup" routerLinkActive="active">Register</a>
+      </li>
+      <li>
+        <a routerLink="/signin" routerLinkActive="active">Login</a>
+      </li>
+    </ng-template>
+    <li *ngIf="authService.isAuthenticated()">
+      <a style="cursor : pointer" (click)="onLogout()">Logout</a>
+    </li>
   </ul>
 </nav>

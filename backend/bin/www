@@ -36,7 +36,7 @@ io.on('connection', function(client) {
       client.broadcast.emit('broad', 'Broadcasting messages -----------');
   });
 
-
+  client.emit('total-score-broadcast', {totalScore, 'scores' : scores});
   client.on('update-score', function(data){
     console.log('update-score event is fired ', data);
     scores.push(data);

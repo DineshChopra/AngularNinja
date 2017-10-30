@@ -15,14 +15,21 @@ import { heroListReducer } from './hero/store/hero.reducers';
 import { HttpClient } from '@angular/common/http';
 import { ChildOneComponent } from './change-detection/child-one/child-one.component';
 import { ChildTwoComponent } from './change-detection/child-two/child-two.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { SigninComponent } from './auth/signin/signin.component';
+import { AuthService } from './auth/auth.service';
+import { AuthGuardService } from './auth/auth-guard.service';
 
 const appRoutes : Routes = [
   {path : '', redirectTo : 'hero', pathMatch : 'full'},
-  {path : "bank", loadChildren : 'app/bank/bank.module#BankModule'},
+  {path : "bank", loadChildren : 'app/bank/bank.module#BankModule', 
+    canActivate : [AuthGuardService]},
   {path : "hero", loadChildren : 'app/hero/hero.module#HeroModule'},
   {path : "aboutus", loadChildren : 'app/aboutus/aboutus.module#AboutusModule'},
   {path : "changeDetection", component : ChangeDetectionComponent},
   {path : "cricket", loadChildren : 'app/cricket/cricket.module#CricketModule'},
+  {path : "signup", component : SignupComponent},
+  {path : "signin", component : SigninComponent},
 ]
 
 
@@ -32,7 +39,9 @@ const appRoutes : Routes = [
     HeaderComponent,
     ChangeDetectionComponent,
     ChildOneComponent,
-    ChildTwoComponent
+    ChildTwoComponent,
+    SignupComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +53,9 @@ const appRoutes : Routes = [
     // RouterModule.forRoot(appRoutes)
     RouterModule.forRoot(appRoutes, {preloadingStrategy : PreloadAllModules}),
   ],
-  providers : [ HeroService ],
+  providers : [ HeroService, 
+                AuthService,
+                AuthGuardService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

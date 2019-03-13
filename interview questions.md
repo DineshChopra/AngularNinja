@@ -6,8 +6,15 @@ Second execute test case
 
 Sort string date array
 let arr = ['10/17/13', '10/14/13', '10/18/13'];
-let newArr = arr.sort(function(a,b){return new Date(a) - new Date(b)});
+```
+let arr = [ '10/17/2013', '10/14/2013', '10/18/2013'];
+console.log(arr);
+arr.sort((a,b) => {
+    return new Date(a) - new Date(b);
+});
+console.log(arr);
 
+```
 
 let str = aaabbbcc
 output = a3b3c2
